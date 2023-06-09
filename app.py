@@ -78,7 +78,7 @@ def book():
         edition = request.form.get("be")
         author = request.form.get("ba")
 
-        # Creat new record
+        # Create new record
         stud = Book(Title = title, Edition=edition, Author=author)
         db.session.add(stud)
         db.session.commit()
