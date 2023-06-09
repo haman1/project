@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+    {%block title%}
+    This is the Main Index Page
+    {%endblock%}
+  {%block body%}
+  <h1 class="label label-success">Borrow-Book form</h1>
+  <form class="form-horizontal" action="/borrow_book" method="post" >
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="pwd">Student Name:</label>
+      <div class="col-sm-10">
+        <select class="form-control" id="program" name="sm">
+          {%for a in c%}
+          <option value="{{a.Name}}"> {{a.Name}} </option>
+          {%endfor%}
+        </select>
+      </div>
+    </div>
+      <div class="form-group">
+        <label class="control-label col-sm-2" for="pwd">Book Title:</label>
+        <div class="col-sm-10">
+          <select class="form-control" id="program" name="bt">
+            {%for h in b%}
+            <option value="{{h.Title}}"> {{h.Title}} </option>
+            {%endfor%}
+          </select>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="control-label col-sm-2" for="email">Voucher No:</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="email" placeholder="Enter Recipt number" name="vn">
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="control-label col-sm-2" for="email">Due Date:</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="email" placeholder="DD-MM-YYYY" name="date">
+        </div>
+      </div>
+
+    <div class="form-group">
+      <div class="col-sm-offset-2 col-sm-10">
+        <button type="submit" class="btn btn-default">Submit</button>
+      </div>
+    </div>
+  </form>
+{%endblock%}
