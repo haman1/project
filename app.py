@@ -54,8 +54,8 @@ def index():
     students = Borrow.query.all()
     return render_template("index.html", students=students)
 
-@app.route("/insert", methods=['GET', 'POST'])
-def insert():
+@app.route('/student' , methods = ['GET','POST'])
+def create():
     if request.method == "POST":
 
         name = request.form.get("name")
@@ -69,6 +69,14 @@ def insert():
 
     students = Student.query.all()
     return render_template("student.html", students=students)
+
+@app.route('/student/<int:id>')
+def retrieve(id):
+    student = Student.query.filter_by(id=id).first()
+    if student:
+        return render_template('single.html', student = student)
+   
+
 
 @app.route("/book", methods=['GET', 'POST'])
 def book():
@@ -95,7 +103,7 @@ def borrow():
         VN = request.form.get("vn")
         DA = request.form.get("date")
 
-        # Creat new record
+        # Create new record
         stud = Borrow(S_Name = name, B_title=BT, token_no=VN, due=DA)
         db.session.add(stud)
         db.session.commit()
@@ -116,7 +124,7 @@ def rtrn():
         VN = request.form.get("vn")
         DA = request.form.get("ch")
 
-        # Creat new record
+        # Create new record
         stud = Rtrn(St_Name = name, Bo_title=BT, token_no=VN, charges=DA)
         db.session.add(stud)
         db.session.commit()
