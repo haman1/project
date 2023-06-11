@@ -3,7 +3,7 @@
 ### Table of Contents
 - [Description](#description)
 - [Author Info](#author-info)
-- [License](#license)
+- [License](#Badges)
 
 ## Description
 
@@ -15,11 +15,7 @@
 - Client: Html, CSS, Bootstrap
 - Server: Python, Flask
 
-![Project Image](project-
-
-https://user-images.githubusercontent.com/12530131/154860870-2908881a-7424-4244-aa0a-e87ecc07cc87.mp4
-
-image-url)
+![]()
 
 ![Project Image](project-
 
@@ -30,7 +26,7 @@ image-url)
 
 Insert gif or link to demo
 
-[Back To The Top](#project)
+[Back To The Top](#Library Management System)
 
 ---
 
@@ -42,7 +38,6 @@ Insert gif or link to demo
 
 ## Badges
 
-[![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://github.com/tterb/atomic-design-ui/blob/master/LICENSEs)
 [![GPLv3 License](https://img.shields.io/badge/License-GPL%20v3-yellow.svg)](https://opensource.org/licenses/)
 [![AGPL License](https://img.shields.io/badge/license-AGPL-blue.svg)](http://www.gnu.org/licenses/agpl-3.0)
 
