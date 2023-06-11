@@ -31,6 +31,7 @@ class Book(db.Model):
     Edition = db.Column(db.String(150), nullable=False)
     Author = db.Column(db.String(50))
 
+
 class Borrow(db.Model):
     __tablename__ = "borrow"
     id = db.Column(db.Integer, primary_key=True)
@@ -177,7 +178,7 @@ def borrow():
         db.session.commit()
 
         students = Borrow.query.all()
-        return render_template("intro.html", students=students)
+        return render_template("index.html", students=students)
 
     c = db.session.query(Student.Name).all()
     b = db.session.query(Book.Title).all()
