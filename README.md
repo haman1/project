@@ -7,7 +7,7 @@ A library system that allows a librarian to manage students,books and the rentin
 You're sections headers will be used to reference location of destination.
 
 - [Features](#features)
-- [Tech Stack](#Tech stack)
+- [Tech Stack](#Tech Stack)
 - [Screenshots](#screenshots)
 - [Demo](#demo)
 - [Author Info](#author-info)
@@ -43,6 +43,8 @@ You're sections headers will be used to reference location of destination.
 
 
 ## Demo
+
+![Project Demo](https://github.com/haman1/project/assets/12530131/6f85893b-7464-4cc3-a635-dfaa8be243cb)
 
 [Back To The Top](#LMS)
 
