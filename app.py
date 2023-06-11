@@ -77,6 +77,27 @@ def retrieve(id):
         return render_template('single.html', student = student)
    
 
+@app.route('/update/<int:id>',methods = ['GET','POST'])
+def update(id):
+    student = Student.query.filter_by(id=id).first()
+    if request.method == 'POST':
+        if student:
+            db.session.delete(student)
+            db.session.commit()
+ 
+            name = request.form.get("name")
+            department = request.form.get("department")
+            contact = request.form.get("contact")
+            gender = request.form.get("gender")
+
+            student = Student(Name=name, Department=department, contact=contact, gender=gender)
+ 
+            db.session.add(student)
+            db.session.commit()
+            return redirect(f'/student')
+ 
+    return render_template('update.html', student = student)
+
 
 @app.route("/book", methods=['GET', 'POST'])
 def book():

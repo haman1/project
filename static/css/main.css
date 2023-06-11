@@ -11,3 +11,12 @@ footer{
 nav{
 margin-bottom: 2rem;
 }
+
+.details{
+  font-size: 1.5rem;
+  color:rgb(211, 49, 49)
+}
+
+.sd{
+  margin: auto;
+}
