@@ -44,8 +44,7 @@ You're sections headers will be used to reference location of destination.
 
 ## Demo
 
-![Project Image](project-
-https://github.com/haman1/project/assets/12530131/c55d7f58-dc12-460b-9978-64d724add278
+![Project Image](https://github.com/haman1/project/assets/12530131/c55d7f58-dc12-460b-9978-64d724add278.mp4
 )
 
 [Back To The Top](#LMS)
