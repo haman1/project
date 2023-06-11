@@ -123,6 +123,45 @@ def book():
     cla = Book.query.all()
     return render_template("book.html", cla=cla)
 
+
+@app.route('/book/<int:id>')
+def read(id):
+    book = Book.query.filter_by(id=id).first()
+    if book:
+        return render_template('book_details.html', book = book)
+    
+
+
+@app.route('/update_book/<int:id>',methods = ['GET','POST'])
+def update_book(id):
+    book = Book.query.filter_by(id=id).first()
+    if request.method == 'POST':
+        if book:
+            db.session.delete(book)
+            db.session.commit()
+ 
+            title = request.form.get("bt")
+            edition = request.form.get("be")
+            author = request.form.get("ba")
+
+
+            stud = Book(Title = title, Edition=edition, Author=author)
+ 
+            db.session.add(stud)
+            db.session.commit()
+            return redirect(f'/book')
+ 
+    return render_template('update_book.html', book= book)
+   
+@app.route('/delete_book/<int:id>',methods = ['GET','POST'])
+def delete_book(id):
+    book = Book.query.filter_by(id=id).first()
+    db.session.delete(book)
+    db.session.commit()
+
+    return redirect(f'/book')
+
+
 @app.route("/borrow_book", methods=['GET', 'POST'])
 def borrow():
     if request.method == "POST":

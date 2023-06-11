@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+    {%block title%}
+    Book Details
+    {%endblock%}
+  {%block body%}
+
+<form action="" class="sd">
+    <h2 class="details">Book details</h2>
+        <h4>Id</h4>
+        <p>{{book.id}}</p><hr>
+        <h4>Title</h4>
+        <p>{{book.Title}}</p><hr>
+        <h4>Edition</h4>
+        <p>{{book.Edition}}</p><hr>
+        <h4>Author</h3>
+        <p>{{book.Author}}</p><hr>
+       
+       
+</form>
+
+{%endblock%}
