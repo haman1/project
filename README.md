@@ -15,19 +15,16 @@
 - Client: Html, CSS, Bootstrap
 - Server: Python, Flask
 
-### Index page
+
 ![](images/filenameindex.png)
 
-### Student page
+
 ![](images/filenamestudent.png)
 
-### Book page
 ![](images/filenamebook.png)
 
-### Borrow page
 ![](images/filenameborrow.png)
 
-### Return page
 ![](images/filenamereturn.png)
 
 
