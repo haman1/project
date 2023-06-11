@@ -1,4 +1,4 @@
-# Library Management System
+# LMS
 
 ### Table of Contents
 - [Description](#description)
@@ -15,18 +15,29 @@
 - Client: Html, CSS, Bootstrap
 - Server: Python, Flask
 
-![]()
+### Index page
+![](images/filenameindex.png)
 
-![Project Image](project-
+### Student page
+![](images/filenamestudent.png)
 
-https://user-images.githubusercontent.com/12530131/154860870-2908881a-7424-4244-aa0a-e87ecc07cc87.mp4
+### Book page
+![](images/filenamebook.png)
 
-image-url)
+### Borrow page
+![](images/filenameborrow.png)
+
+### Return page
+![](images/filenamereturn.png)
+
+
 ## Demo
+
+![](images/filenamevid.mp4)
 
 Insert gif or link to demo
 
-[Back To The Top](#Library Management System)
+[Back To The Top](#LMS)
 
 ---
 
