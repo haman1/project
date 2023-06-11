@@ -98,6 +98,14 @@ def update(id):
  
     return render_template('update.html', student = student)
 
+@app.route('/delete/<int:id>',methods = ['GET','POST'])
+def delete(id):
+    student = Student.query.filter_by(id=id).first()
+    db.session.delete(student)
+    db.session.commit()
+
+    return redirect(f'/student')
+
 
 @app.route("/book", methods=['GET', 'POST'])
 def book():

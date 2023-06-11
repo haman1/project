@@ -1,12 +1,24 @@
-<h3>Id</h3>
-<p>{{student.id}}</p><hr>
-<h3>Name</h3>
-<p>{{student.Name}}</p><hr>
-<h3>Department</h3>
-<p>{{student.Department}}</p><hr>
-<h3>Contact</h3>
-<p>{{student.Contact}}</p><hr>
-<h3>Gender</h3>
-<p>{{student.gender}}</p><hr>
-<h3>Date</h3>
-<p>{{student.date}}</p><hr>
+{% extends "base.html" %}
+    {%block title%}
+    This is the Main Index Page
+    {%endblock%}
+  {%block body%}
+
+<form action="" class="sd">
+    <h2 class="details">Student details</h2>
+        <h4>Id</h4>
+        <p>{{student.id}}</p><hr>
+        <h4>Name</h4>
+        <p>{{student.Name}}</p><hr>
+        <h4>Department</h4>
+        <p>{{student.Department}}</p><hr>
+        <h4>Contact</h3>
+        <p>{{student.Contact}}</p><hr>
+        <h4>Gender</h4>
+        <p>{{student.gender}}</p><hr>
+        <h4>Date</h4>
+        <p>{{student.date}}</p><hr>
+</form>
+
+{%endblock%}
+
