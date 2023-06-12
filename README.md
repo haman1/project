@@ -4,7 +4,6 @@
 A library system that allows a librarian to manage students,books and the renting of books
 
 ### Table of Contents
-You're sections headers will be used to reference location of destination.
 
 - [Features](#features)
 - [Tech-stack](#Tech-stack)
